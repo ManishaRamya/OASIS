@@ -1,0 +1,171 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- User Story #1 -->
+<html id="main">
+
+<!-- User Story #2 -->
+<head>
+  <title id="title">Iwata, Satoru Tribute</title>
+</head>
+<body>
+  <!-- Unecessary on codepen, but good to have a copy on local storage as well, and this saves having
+  stylesheet on same page-->
+  <link rel="stylesheet" href="tribute.css">
+  
+  <!-- <button class="button, primary" type="submit">N</button> This is just a placeholder for reference -->
+
+
+  <!-- This is the title of the page, main header -->
+  <div class="container">
+    <div class="header">
+      <h2 id="timelineTitle">Eight Amazing Feats made Possible By Satoru Iwata <br><br>1952-2015</h2>
+      <h3 id="tribute-info"> Truly an Amazing Person </h3>
+      <div id="img-div">
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg/440px-Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg" alt="Satoru Iwata speaking at a conference">
+       <div id="img-caption">Satoru Iwata speaking at a conference.</div> 
+    </div>
+      </div>
+
+<!-- Stagger between li and li - inverted, to give the alternating visual effect on page -->
+ <p> All sources to the fun facts are listed in the buttons in the middle!</p>
+    <ul class="timeline">
+      
+        <li>
+          <div id="timelineBadge"><a id="tribute-link" href="https://www.nintendo.co.jp/corporate/direct_links/index.html" base target="_blank">
+            <button class="button, primary" id="timelineButton" type="submit">N</button></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Launched Nintendo Direct</h4>
+            </div>
+            <div class="timelineBody">
+              <p>Started in 2011 Nintendo Direct is an online presentation produced by Nintendo, where information regarding 
+                the company's content or franchises is presented, such as information about games and consoles.</p>
+              </div>
+            </div>
+          </li>           
+<!-- Earthbound -->
+        <li class="timeline-inverted">
+          <div id="timelineBadge">
+            <a href="http://kamedani.tumblr.com/post/45700864819/mother-2-re-release-discussion-part-1" target="_blank">
+              <button class="button primary" id="timelineButton" type="submit">I</button>
+            </a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Saved Earthbound</h4>
+            </div>
+            <div class="timelineBody">
+              <p>
+                Helped the team in the final year of production, after rewriting the entire code that would have taken 2 
+                additional years with the way they had things going, creating a solid friendship between Itoi and him.
+              </p>        
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="timelineBadge">
+            <a href="http://www.nintendo.com/nes-classic/balloon-fight-developer-interview" target="_blank">
+              <button class="button, primary" id="timelineButton" type="submit">N</button>
+            </a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Made an Extra Mode In Balloon Fight With Ease</h4>
+            </div>
+            <div class="timelineBody">
+              <p>Memorizing the code of the entire program he was able to make adjustments his superior requested within minutes. </p>
+            </div>
+          </div>
+      </li>
+
+      <li class="timeline-inverted">
+          <div id="timelineBadge"><a href="http://nintendoeverything.com/iwata-on-his-super-programmer-days-helped-get-smash-bros-melee-out-on-time/" target="_blank">
+            <button class="button, primary" id="timelineButton" type="submit">T</button></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Helped SSBM Release On Time</h4>
+            </div>
+            <div class="timelineBody">
+              <p>
+              <q>I was right there, sitting by programmers, in the trenches, reading code together, 
+                finding the bugs, and fixing them together.</q></p>    
+            </div>
+          </div>
+      </li>
+
+      <li>
+          <div id="timelineBadge"><a href="http://www.gamesradar.com/3ds-sales-260-price-drop/" target="_blank">
+            <button class="button, primary" id="timelineButton" type="submit">E</button></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Salvaged the Future of 3DS</h4>
+            </div>
+            <div class="timelineBody">
+              <p>Willingly taking a 50% paycut and reducing the price of 3DS by 32%, managed to raise sales by 
+                260% from previous period. </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-inverted">
+          <div id="timelineBadge"><a href="http://www.techradar.com/news/gaming/10-things-you-might-not-know-about-nintendo-s-satoru-iwata-1299085" target="_blank">
+            <button class="button, primary" id="timelineButton" type="submit">N</button></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Expanded Pokemon Gold and Silver</h4>
+            </div>
+            <div class="timelineBody">
+              <p>When Gamefreak made Pokemon Gold and Silver, only the Johto region was included in the game. Iwata 
+                thought that players deserved more, so he spent some of his spare time squeezing in the entirety of Kanto 
+                (the region from Pokemon Blue and Red) using some very heavy compression. </p> 
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div id="timelineBadge"><a href="http://www.techradar.com/news/gaming/10-things-you-might-not-know-about-nintendo-s-satoru-iwata-1299085" target="_blank">
+            <button class="button, primary" id="timelineButton" type="submit">D</button></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Saved Livelihood of Many By <br>Slashing Personal Pay</h4>
+            </div>
+            <div class="timelineBody">
+              <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae repellendus animi fugit at ullam, nihil doloremque dolore ratione, temporibus magni. In, vel ratione sint consequuntur vero harum cupiditate repellendus. </p> 
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-inverted">
+          <div id="timelineBadge"><a href="http://www.techradar.com/news/gaming/10-things-you-might-not-know-about-nintendo-s-satoru-iwata-1299085" target="_blank">
+            <button class="button, primary" id="timelineButton" type="submit">O</button></a>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 id="timelineSubTitle">Expanded Pokemon Gold and Silver</h4>
+            </div>
+            <div class="timelineBody">
+              <p>When Gamefreak made Pokemon Gold and Silver, only the Johto region was included in the game. Iwata thought 
+                that players deserved more, so he spent some of his spare time squeezing in the entirety of Kanto (the region 
+                from Pokemon Blue and Red) using some very heavy compression. </p> 
+            </div>
+          </div>
+        </li>
+       
+    </ul>
+</div>
+
+</body>
+   <footer>
+  <p>Presented by: Frank S Pelletier</p>
+  Contact information: <a href="mailto:fspllet@gmail.com">
+  fspellet@gmail.com</a>
+  <br>
+    Original design: <a href="https://bootsnipp.com/snippets/featured/timeline">Timeline</a><br>
+    Part of a portfolio project for: <a href="http://freecodecamp.org">Freecodecamp project</a>.
+  </p>
+    </footer>
+</html>

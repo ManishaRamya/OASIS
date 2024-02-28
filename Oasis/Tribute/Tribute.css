@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Lato');
+
+.timeline-panel {
+  background-image: url(/home/gv/Desktop/TheOdinProject/FreeCodeCampProjects/tributePage/background.jpeg);
+  background-repeat: repeat-y;
+}
+
+#image {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    border: solid red 4px;
+    border-radius: 20px;
+  }
+
+#timelineTitle{
+  display: block;
+  text-align: center;
+  width: 50%;
+  border: solid red 4px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+#img-caption {
+  display:block;
+  margin: 0 0 10 10;
+}
+
+
+
+#main {
+  background-color: gray;
+}
+@media handheld, only screen and (max-width: 767px) {
+ /* mobile version css, modify so there's different dimensions */
+  }
+
+.timeline {
+    /* the main timeline structure? */
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+ 
+} 
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: .05%;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline-heading {
+  float: center;
+}
+
+
+.timeline-panel {
+  max-width: 50%;
+  max-height: 50%;
+  border: 1px dotted #d4d4d4;
+  border-radius: 2px;
+  padding: 15px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 10px rgba(17, 7, 155, 0.2);
+  box-shadow: 0 1px 20px  rgba(0, 0, 0, 0.175); 
+  /* Following is strictly in the folder, image is referencing the same location */
+  background-image:url("background.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* left panels */
+li {
+  padding-right: -100px;
+  position: relative;
+  width: auto;
+}
+
+li:after {
+  clear: both;
+}
+
+/* timeline stagger design */
+li:before,
+li:after {
+  content: " ";
+  display: table;
+}
+
+li:after {
+  clear: both;
+}
+
+/* pushes the left panels to avoid overlapping the buttons */
+.timeline > li:not(.timeline-inverted) {
+padding-right:100px;
+}
+
+.timeline > li.timeline-inverted {
+padding-left:90px;
+}
+
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  content: " ";
+}
+
+.timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  /* border-bottom: 14px solid transparent; */
+  content: " ";
+}
+
+#timelineBadge {
+  color: rgb(230, 0, 18);
+  width: 1%;
+  height: 45px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-top: 15px;
+  margin-left: -25px;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+/* Right side timeline panels */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+/* Timeline Layout */
+.timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 12%;
+  left: -15px;
+  right: auto;
+}
+
+.timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14%;
+  left: -14px;
+  right: auto;
+}
+
+p {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+  }
+
+/* Nintendo style Title */
+#timelineTitle {
+  font-family: 'Press Start 2P', serif;
+  font-size: 18px;
+  border-width: thick;
+  text-shadow: 1px 1px rgb(254, 0, 22);
+  border-color: rgb(254, 0, 22);
+  border-style: solid;
+  border-radius: 30px;
+  border-collapse: collapse;
+  border-spacing: 50px 100px;
+  display: inline-block;
+  padding: 10px;
+  }     
+
+#timelineSubTitle {
+  font-family: 'Press Start 2P', serif;
+  font-size: 12px;
+  border-width: thick;
+  color: #ffffff;
+  outline: #000000;
+  outline-width: 1px;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  border-color: rgb(254, 0, 22);
+  border-style: solid;
+  border-radius: 30px;
+  border-collapse: collapse;
+  border-spacing: 50px 100px;
+  display: inline-block;
+  padding: 10px;
+
+  }  
+  
+.thick-red-border {
+  border-color: rgb(254, 0, 22);
+  border-width: 10%;
+  border-style: solid;
+  border-radius: 30px;
+  border-spacing: 10px 50px;  
+  }
+
+#timelineButton {
+    background-color: #ff0016; /* Nintendo Red */
+    border: solid;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Press Start 2P', serif;
+    font-size: 16px;
+    border-radius: 50%;
+    box-shadow: 0 5px #000;
+}
+
+/* Creates a hover effect over the buttons, not necessary for this project but keeping to reference to */
+/* #timelineButton:hover {background-color: #000000} */
+
+/* Creates a button press effect */
+#timelineButton:active {
+  background-color: #ff0016;
+  box-shadow: 0 5px #000;
+  transform: translateY(4px);
+}
+
+padded-click {
+  position: relative; 
+}
+
+padded-click:after {
+  padding: 50px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
